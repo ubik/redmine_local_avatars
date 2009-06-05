@@ -1,0 +1,10 @@
+<div class="box">
+<h3><%= l(:label_avatar)%></h3>
+<div style="width: 128px; height: 128px; border: 1px silver solid;">
+<%= avatar(@user, :size => "128") %>
+</div><br>
+<% form_tag( { :action => 'save_avatar', :id => @user }, :multipart => true) do %>
+    <%= file_field_tag "avatar" %><br />
+    <%= submit_tag l(:button_save) %>
+<% end %>
+</div>

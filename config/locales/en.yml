@@ -1,0 +1,4 @@
+# English strings go here
+en:
+  label_avatar: "Avatar"
+  message_avatar_uploaded: "Avatar uploaded successfully"
